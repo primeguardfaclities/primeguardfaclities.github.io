@@ -1,122 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>PrimeGuard Facilities | Elite Security Solutions</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PrimeGuard Facilities | Elite Security & Facility Solutions</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Top Bar -->
-<div class="top-bar">
-    <div>
-        4125/9, Vishal Nagar, Rohtak (Haryana)
-    </div>
-    <div>
-        Call: +91 9896532570
-    </div>
-</div>
-
-<!-- Header -->
-<header>
+<header class="navbar">
+  <div class="container">
     <div class="logo">PrimeGuard Facilities</div>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#why">Why Choose Us</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <button class="nav-toggle" aria-label="Toggle Navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#solutions">Solutions</a></li>
+        <li><a href="#industries">Industries</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+  </div>
 </header>
 
-<!-- Hero Section -->
-<section class="hero" id="home">
+<main>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
     <div class="hero-content">
-        <h1>Elite Security & Facility Management</h1>
-        <p>Luxury Protection. Absolute Reliability. Unmatched Professionalism.</p>
-        <a href="#contact" class="btn-gold">Request Consultation</a>
+      <h1>Elite Security & Facility Management</h1>
+      <p>Protecting your assets with precision, trust, and technology.</p>
+      <a href="#contact" class="btn-primary">Get in Touch</a>
     </div>
-</section>
+  </section>
 
-<!-- Services -->
-<section class="services" id="services">
-    <h2>Our Premium Services</h2>
-    <div class="service-grid">
-
-        <div class="service-card">
-            <h3>Armed & Unarmed Guards</h3>
-            <p>Highly trained professionals for corporate, residential & VIP security.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>Corporate Security</h3>
-            <p>Complete security planning, surveillance & risk management solutions.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>Facility Management</h3>
-            <p>Premium housekeeping, maintenance & operational excellence services.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>Event Security</h3>
-            <p>Discreet and high-level security management for elite events.</p>
-        </div>
-
+  <!-- Solutions -->
+  <section id="solutions" class="section solutions fade-in">
+    <h2>Our Services</h2>
+    <div class="solutions-grid">
+      <div class="card">
+        <h3>Physical Security</h3>
+        <p>Professional guards trained for corporate and residential protection.</p>
+      </div>
+      <div class="card">
+        <h3>Tech-Enabled Security</h3>
+        <p>24/7 surveillance, monitoring, access control, and alarms.</p>
+      </div>
+      <div class="card">
+        <h3>Facility Management</h3>
+        <p>Maintenance, cleaning, and support services for corporate spaces.</p>
+      </div>
+      <div class="card">
+        <h3>Risk & Crisis Response</h3>
+        <p>Emergency planning and rapid-response teams for your business.</p>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- About -->
-<section class="about" id="about">
-    <div class="about-content">
-        <h2>About PrimeGuard Facilities</h2>
-        <p>
-            PrimeGuard Facilities is a high-end security and facility management company 
-            committed to delivering excellence. Our professionals are trained to maintain 
-            safety, confidentiality, and operational perfection for elite clients.
-        </p>
+  <!-- Stats -->
+  <section class="section stats fade-in">
+    <div class="stats-grid">
+      <div class="stat">
+        <h3 class="count" data-target="35">0</h3>
+        <p>Years Experience</p>
+      </div>
+      <div class="stat">
+        <h3 class="count" data-target="5000">0</h3>
+        <p>Clients Served</p>
+      </div>
+      <div class="stat">
+        <h3 class="count" data-target="15000">0</h3>
+        <p>Personnel</p>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Why Choose Us -->
-<section class="why" id="why">
-    <h2>Why Choose PrimeGuard?</h2>
-    <div class="why-grid">
-        <div>
-            <h4>✔ Certified Professionals</h4>
-            <p>Trained & background verified security personnel.</p>
-        </div>
-        <div>
-            <h4>✔ 24/7 Monitoring</h4>
-            <p>Round-the-clock security management.</p>
-        </div>
-        <div>
-            <h4>✔ Luxury Clientele Experience</h4>
-            <p>Discretion, professionalism & executive presence.</p>
-        </div>
+  <!-- Industries -->
+  <section id="industries" class="section industries fade-in">
+    <h2>Industries We Serve</h2>
+    <ul>
+      <li>Corporate & Offices</li>
+      <li>Banking & Finance</li>
+      <li>Industrial & Manufacturing</li>
+      <li>Healthcare & Hospitality</li>
+      <li>Retail & Warehousing</li>
+    </ul>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="section testimonials fade-in">
+    <h2>Client Testimonials</h2>
+    <div class="testimonial">
+      <p>"PrimeGuard’s team is professional, responsive, and highly reliable."</p>
+      <span>— CEO, Global Corp</span>
     </div>
-</section>
+    <div class="testimonial">
+      <p>"Modern technology and expert personnel — we feel fully secure."</p>
+      <span>— Director, Finance House</span>
+    </div>
+  </section>
 
-<!-- Contact -->
-<section class="contact" id="contact">
-    <h2>Request a Consultation</h2>
+  <!-- Contact -->
+  <section id="contact" class="section contact fade-in">
+    <h2>Contact Us</h2>
     <form>
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email Address" required>
-        <input type="text" placeholder="Phone Number" required>
-        <textarea rows="5" placeholder="Your Security Requirement"></textarea>
-        <button type="submit">Submit Request</button>
+      <div class="form-group">
+        <input type="text" id="name" placeholder=" " required>
+        <label for="name">Your Name</label>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" placeholder=" " required>
+        <label for="email">Email Address</label>
+      </div>
+      <div class="form-group">
+        <textarea id="message" placeholder=" " rows="4"></textarea>
+        <label for="message">Your Message</label>
+      </div>
+      <button type="submit" class="btn-primary">Send Message</button>
     </form>
-</section>
+  </section>
 
-<!-- Footer -->
+</main>
+
 <footer>
-    <p>© 2026 PrimeGuard Facilities | Luxury Security Solutions | All Rights Reserved</p>
+  <p>© 2026 PrimeGuard Facilities. All Rights Reserved.</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
-
