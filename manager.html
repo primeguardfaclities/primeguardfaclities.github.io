@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manager Attendance | Prime Guard Facilities</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-dashboard">
+  <header class="dashboard-topbar">
+    <div class="dashboard-container topbar-inner">
+      <div class="auth-brand">
+        <img src="assets/logo.jpg" alt="Prime Guard Facilities logo" class="auth-logo">
+        <span>
+          <strong>PRIME</strong>
+          <small>Guard Facilities</small>
+        </span>
+      </div>
+      <div class="topbar-actions">
+        <a href="index.html" class="ghost-link">View Website</a>
+        <button type="button" class="logout-button" id="managerLogoutButton">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="dashboard-main">
+    <div class="dashboard-container">
+      <section class="dashboard-hero">
+        <p class="auth-kicker">Attendance Desk</p>
+        <h1>Manager Attendance Panel</h1>
+        <p class="manager-header-note" id="managerLocationNote"></p>
+        <p id="managerDateNote">Managers can only mark attendance for today. Check-in and check-out times must be within the allowed live time window.</p>
+      </section>
+
+      <section class="dashboard-card">
+        <div class="employee-admin-header">
+          <div>
+            <h2>Today's Attendance</h2>
+            <p class="dashboard-section-copy">Check-in can only be marked for today, and time selection is limited to the current time and up to two hours before it.</p>
+          </div>
+        </div>
+        <div class="manager-attendance-grid" id="managerAttendanceGrid"></div>
+      </section>
+    </div>
+  </main>
+
+  <script src="app-config.js"></script>
+  <script src="app-api.js"></script>
+  <script src="manager.js"></script>
+</body>
+</html>

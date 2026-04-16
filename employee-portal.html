@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Portal | Prime Guard Facilities</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-dashboard">
+  <header class="dashboard-topbar">
+    <div class="dashboard-container topbar-inner">
+      <div class="auth-brand">
+        <img src="assets/logo.jpg" alt="Prime Guard Facilities logo" class="auth-logo">
+        <span>
+          <strong>PRIME</strong>
+          <small>Guard Facilities</small>
+        </span>
+      </div>
+      <div class="topbar-actions">
+        <a href="index.html" class="ghost-link">View Website</a>
+        <button type="button" class="logout-button" id="employeeLogoutButton">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="dashboard-main">
+    <div class="dashboard-container">
+      <section class="dashboard-hero">
+        <p class="auth-kicker">Employee Area</p>
+        <h1>Welcome, <span id="employeeWelcomeName">Team Member</span></h1>
+        <p>This page is reserved for Prime Guard Facilities employees. You can expand it later for shift schedules, notices, payroll links, deployment details, or attendance tools.</p>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="dashboard-card">
+          <h2>Your Profile</h2>
+          <ul class="dashboard-list" id="employeeProfileDetails">
+            <li>Employee ID: -</li>
+            <li>Designation: -</li>
+            <li>Location: -</li>
+            <li>Username: -</li>
+          </ul>
+        </article>
+
+        <article class="dashboard-card">
+          <h2>Quick Access</h2>
+          <ul class="dashboard-list">
+            <li>Shift instructions and duty updates</li>
+            <li>Site reporting and supervisor contact</li>
+            <li>Emergency escalation process</li>
+          </ul>
+        </article>
+
+        <article class="dashboard-card">
+          <h2>Office Contacts</h2>
+          <ul class="dashboard-list">
+            <li>Rohtak Office: 4125/9, Vishal Nagar, Rohtak (Haryana)</li>
+            <li>New Delhi Office: Dwarka Sector-19, New Delhi-110075</li>
+            <li>Zirakpur Office: Chandigarh City Center, VIP Road</li>
+          </ul>
+        </article>
+
+        <article class="dashboard-card wide">
+          <h2>Your Attendance</h2>
+          <div class="attendance-table-wrap">
+            <table class="attendance-table">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Check-In</th>
+                  <th>Check-Out</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="employeeAttendanceTableBody">
+                <tr>
+                  <td colspan="4">No attendance records available.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="dashboard-card wide">
+          <h2>Employee Notices</h2>
+          <div class="dashboard-note-grid">
+            <div class="dashboard-note">
+              <strong>Attendance</strong>
+              <p>Track attendance submission links or daily reporting reminders here.</p>
+            </div>
+            <div class="dashboard-note">
+              <strong>Deployment</strong>
+              <p>Show upcoming assignments, location changes, or shift timing updates.</p>
+            </div>
+            <div class="dashboard-note">
+              <strong>Support</strong>
+              <p>Share supervisor numbers, escalation contacts, and internal instructions.</p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <script src="app-config.js"></script>
+  <script src="app-api.js"></script>
+  <script src="employee.js"></script>
+</body>
+</html>

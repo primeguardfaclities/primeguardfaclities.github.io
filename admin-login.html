@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login | Prime Guard Facilities</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-shell">
+  <main class="auth-layout">
+    <section class="auth-panel">
+      <a href="index.html" class="auth-brand" aria-label="Prime Guard Facilities home">
+        <img src="assets/logo.jpg" alt="Prime Guard Facilities logo" class="auth-logo">
+        <span>
+          <strong>PRIME</strong>
+          <small>Guard Facilities</small>
+        </span>
+      </a>
+
+      <p class="auth-kicker">Restricted Access</p>
+      <h1>Admin Login</h1>
+      <p class="auth-copy">Sign in with your authorized username and password to access the internal admin page.</p>
+
+      <form class="auth-form" id="adminLoginForm">
+        <label>
+          <span>Username</span>
+          <input type="text" name="username" autocomplete="username" required>
+        </label>
+        <label>
+          <span>Password</span>
+          <input type="password" name="password" autocomplete="current-password" required>
+        </label>
+        <button type="submit" class="auth-button">Login</button>
+        <p class="auth-error" id="loginError" hidden>Invalid username or password.</p>
+      </form>
+    </section>
+  </main>
+
+  <script src="app-config.js"></script>
+  <script src="app-api.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
